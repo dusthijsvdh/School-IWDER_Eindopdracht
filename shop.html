@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Martin Garrix</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/nav.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/popup.js"></script>
+</head>
+
+<body id="shop-page">
+    <nav class="nav" id="nav">
+        <a href="index.html" class="logo">Martin Garrix</a>
+        <section class="nav__button">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Martin</a>
+            <a href="tours.html">Tours</a>
+            <a href="#main" class="active">Shop</a>
+        </section>
+        <a class="nav__icon" onclick="nav()">&#9776;</a>
+    </nav>
+    <header class="halfheight">
+        <article class="header">
+            <h1 class="header__title">+ &times; merch</h1>
+        </article>
+    </header>
+    <main id="main">
+        <section class="info">
+            <article class="info__article">
+                <h2 class="info__title">Martin Garrix Merch</h2>
+                <p class="info__text">Here we have some real nice merch. Off course they all have the famous <strong>+
+                        &times;</strong> icons!</p>
+
+                <h2 class="info__heading">All items:</h2>
+            </article>
+        </section>
+
+        <section class="shop">
+            <section class="shop__grid-container">
+                <section class="shop__grid-item">
+                    <figure>
+                        <img src="img/products/cap-front.png" alt="A baseball cap with white lettering"
+                            title="A baseball cap with white lettering">
+                    </figure>
+                    <section class="product">
+                        <h2 class="product__title">Baseball Cap White</h2>
+                        <p class="product__type">Accessories</p>
+                        <p class="product__price">€25.00</p>
+                        <button class="product__buybtn" onclick="buyForm('cap')">Buy</button>
+                    </section>
+                </section>
+
+
+
+                <section class="shop__grid-item">
+                    <figure>
+                        <img src="img/products/dimensions-front.png" alt="T-shirt Martin Garrix Dimensions"
+                            title="T-shirt Martin Garrix Dimensions">
+                    </figure>
+                    <section class="product">
+                        <h2 class="product__title">T-shirt Martin Garrix</h2>
+                        <p class="product__type">T-Shirts</p>
+                        <p class="product__price">€35.00</p>
+                        <button class="product__buybtn" onclick="buyForm('dimensions')">Buy</button>
+                    </section>
+                </section>
+
+
+                <section class="shop__grid-item">
+                    <figure>
+                        <img src="img/products/frame-front.png" alt="Hoodie Frame Logo" title="Hoodie Frame Logo">
+                    </figure>
+                    <section class="product">
+                        <h2 class="product__title">Hoodie Frame Logo</h2>
+                        <p class="product__type">Sweaters</p>
+                        <p class="product__price">€75.00</p>
+                        <button class="product__buybtn" onclick="buyForm('frame')">Buy</button>
+                    </section>
+                </section>
+
+
+                <section class="shop__grid-item">
+                    <figure>
+                        <img src="img/products/hoodie-front.png" alt="Hoodie Black/White Logo"
+                            title="Hoodie Black/White Logo">
+                    </figure>
+                    <section class="product">
+                        <h2 class="product__title">Hoodie Black/White Logo</h2>
+                        <p class="product__type">Sweaters</p>
+                        <p class="product__price">€65.00</p>
+                        <button class="product__buybtn" onclick="buyForm('hoodie')">Buy</button>
+                    </section>
+                </section>
+
+
+                <section class="shop__grid-item">
+                    <figure>
+                        <img src="img/products/socks-front.png" alt="Black and Grey Socks (2-pack)"
+                            title="Black and Grey Socks (2-pack)">
+                    </figure>
+                    <section class="product">
+                        <h2 class="product__title">Black and Grey Socks</h2>
+                        <p class="product__type">Accessories</p>
+                        <p class="product__price">€15.00</p>
+                        <button class="product__buybtn" onclick="buyForm('socks')">Buy</button>
+                    </section>
+                </section>
+
+
+                <section class="shop__grid-item">
+                    <figure>
+                        <img src="img/products/stmpd-front.png" alt="Hoodie Black/White STMPD"
+                            title="Hoodie Black/White STMPD">
+                    </figure>
+                    <section class="product">
+                        <h2 class="product__title">Hoodie Black/White STMPD</h2>
+                        <p class="product__type">Sweaters</p>
+                        <p class="product__price">€65.00</p>
+                        <button class="product__buybtn" onclick="buyForm('stmpd')">Buy</button>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="footer_infoWrapper">
+            <section class="footer__info-grid">
+                <article class="footer__info-item">
+                    <p>&copy; 2020 - Thijs van der Heijden</p>
+                </article>
+                <article class="footer__info-item">
+                    <p>If you have questions you can send me an <a href="mailto:s1120238@student.hsleiden.nl">email</a>
+                    </p>
+                </article>
+                <article class="footer__info-item">
+                    <p>Link to Martin Garrix's <a href="https://en.wikipedia.org/wiki/Martin_Garrix" target="_blank"
+                            title="Click here to go to the wikipedia page of Martin Garrix">Wikipedia page</a></p>
+                </article>
+            </section>
+        </section>
+    </footer>
+    <section id="modal" class="modal modal-disabled">
+        <article class="modal__container">
+            <button id="modal__close" onclick="hideModal()">&times;</button>
+            <section class="modal__header">
+                <h2 id="modal__title">name of the product</h2>
+                <p id="modal__price">€00.00</p>
+            </section>
+            <section class="modal__spacer">
+                <form action="#">
+                    <label for="fname">Full name:</label>
+                    <input type="text" id="fname" name="fname" required><br><br>
+                    <label for="address">email:</label>
+                    <input type="text" id="address" name="address" required><br><br>
+                    <label for="code">Postal Code:</label>
+                    <input type="text" id="code" name="code"><br><br>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required><br><br>
+                    <input id ="product__buybtn" type="submit" value="Submit" onclick="buy()">
+                  </form>
+            </section>
+        </article>
+    </section>
+</body>
+
+</html>
